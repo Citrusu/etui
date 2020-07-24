@@ -1,0 +1,21 @@
+{
+  "name": "actui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Citrus Zhou",
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+/**** JS 调试输出面板 *****/
+.ui-log-dev{
+    position: fixed;
+    width: 80px;
+    height: 50px;
+    /*border: 1px solid #f00;*/
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5999;
+    line-height:50px;
+    text-align: center;
+}
+.ui-log-board{
+    position: fixed;
+    top: 50px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    border: 1px solid #f00;
+    background-color: rgba(255,255,255,.95);
+    height: 8rem;
+    padding: .3rem;
+    z-index: 6000;
+    font-size: .6rem;
+}

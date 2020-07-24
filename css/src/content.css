@@ -1,0 +1,30 @@
+/***** content *****/
+.ui-content,
+.ui-content-padded{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.ui-content-padded {
+    padding: 0.5rem;
+}
+.ui-bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.ui-bg-full{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ui-full-img{
+    display: block;
+    width: 100%;
+}
+.ui-full-img > img{
+    display: block;
+    width: 100%;
+}

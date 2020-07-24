@@ -1,0 +1,88 @@
+/*****弹窗*****/
+.act-pop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    z-index: 101;
+}
+.act-pop-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.act-pop-box {
+    width: 80%;
+    z-index: 1;
+}
+.act-pop-top {
+    position: relative;
+}
+.act-pop-content {
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-repeat: repeat-y;
+    background-size: contain;
+    padding: 0.5rem 11%;
+    max-height: 20rem;
+}
+.act-pop-bottom {
+    position: relative;
+}
+/*分享提示弹窗*/
+.act-pop-friend,
+.act-pop-share {
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+.act-pop-close {
+    position: absolute;
+    /*border: 1px solid #f00;*/
+}
+
+/***活动规则弹窗***/
+/*序列*/
+.act-pop-content.act-rule {
+    padding: 0.8rem;
+}
+.act-rule-ol {
+    margin-left: 0.8rem;
+}
+.act-rule-ol,
+.act-rule-ol li {
+    list-style: decimal;
+}
+.act-rule-ol .act-rule-table {
+    margin-left: -0.4rem;
+}
+.act-rule-text p,
+.act-rule-ol li {
+    margin: 0.3rem 0;
+    font-size: 0.7rem;
+}
+/*规则表格*/
+.act-rule-table {
+    width: 100%;
+}
+.act-rule-table th,
+.act-rule-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.1rem;
+}

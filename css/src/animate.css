@@ -1,0 +1,32 @@
+/*****动画*****/
+/*弹窗打开*/
+.scale-pop{
+    animation: .3s scalePop ease;
+}
+@keyframes scalePop {
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 按钮放大缩小 */
+.scale-btn{
+    animation: 1.2s scalebtn linear infinite;
+}
+@keyframes scalebtn {
+    0% {
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    50% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+    100% {
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+}
