@@ -1,4 +1,5 @@
-# Actui.css 编译说明
+https://github.com/Citrusu/etui
+# etui.css 编译说明
 
 ## 首次使用安装依赖
 
@@ -8,14 +9,22 @@
     npm i gulp -g
     ```
 
-- 进入目录 `actui` 编译依赖 
+- 安装项目依赖 
 
     ```bash
     npm i
     ```
 
+## 使用
 
+输入命令 `gulp` 开始编译
 
-## 开始使用
+## 文件说明
 
-进入项目目录 `actui` 依赖，输入命令 `gulp` 开始编译
+- `gulpfile.js` 编译配置文件
+- `src/scss` 源文件目录
+- `src/*.scss` 不同场景入口文件，可根据需要生成
+    - `etui` 项目使用，包括所有功能
+    - `actui` 活动使用，去除相关ui样式
+    - `etui-mapp` 小程序使用   
+- `dist` 生成css文件目录
