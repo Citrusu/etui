@@ -416,11 +416,13 @@ body{
 }
 
 /* === Tabs === */
+
 .ui-tab {
     /*margin:10px;*/
     overflow: hidden;
     /*border:#ccc 1px solid;*/
 }
+
 .ui-tab-nav {
     width: 100%;
     background-color: #fff;
@@ -431,25 +433,30 @@ body{
     display: -ms-flex;
     display: flex;
 }
+
 .ui-tab-nav div,
-.ui-tab-nav .tabs{
+.ui-tab-nav .tabs {
     display: block;
     height: 2rem;
     line-height: 2rem;
-    text-align:center;
-    cursor:pointer;
+    text-align: center;
+    cursor: pointer;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
+    box-flex: 1;
     flex: 1;
 }
+
 .ui-tab-content {
     min-height: 15rem;
 }
+
 .ui-tab-nav .current {
     color: #00a5e0;
     border-bottom: 2px #00a5e0 solid;
 }
 /***** cell *****/
+
 .ui-cells {
     margin-bottom: .5rem;
     background-color: #FFFFFF;
@@ -458,6 +465,7 @@ body{
     overflow: hidden;
     position: relative;
 }
+
 .ui-cells:before {
     content: " ";
     position: absolute;
@@ -473,6 +481,7 @@ body{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
+
 .ui-cells:after {
     content: " ";
     position: absolute;
@@ -488,7 +497,8 @@ body{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
-.ui-cells > .ui-cell:before{
+
+.ui-cells>.ui-cell:before {
     content: " ";
     position: absolute;
     left: 0;
@@ -503,50 +513,59 @@ body{
     -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
 }
-.ui-cells > .ui-cell:first-child:before {
+
+.ui-cells>.ui-cell:first-child:before {
     display: none;
 }
 
-.ui-cell{
+.ui-cell {
     position: relative;
     padding: .5rem .75rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    box-align: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     color: inherit;
 }
-.ui-cell-wrap{
+
+.ui-cell-wrap {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
-.ui-cell-lt{
+
+.ui-cell-lt {
     align-self: flex-start;
     -webkit-align-self: flex-start;
     -ms-align-self: flex-start;
 }
 
 .ui-cell-ft,
-.ui-cell-rd{
+.ui-cell-rd {
     text-align: right;
     color: #aaa;
+    box-align: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
 }
-.ui-cell-primary ,
+
+.ui-cell-primary,
 .ui-cell-1 {
+    box-flex: 1;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
-.ui-cell-center{
+
+.ui-cell-center {
+    box-flex: 1;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -554,7 +573,8 @@ body{
     width: 100%;
     text-align: center;
 }
-.ui-cell-go:after{
+
+.ui-cell-go:after {
     content: "\e633";
     color: #999;
 }
@@ -1525,7 +1545,7 @@ label.ui-label-checkbox.active-state .ui-item-inner:after {
 }
 
 /*****弹窗*****/
-.act-pop{
+.act-pop {
     position: absolute;
     top: 0;
     right: 0;
@@ -1543,36 +1563,36 @@ label.ui-label-checkbox.active-state .ui-item-inner:after {
     -webkit-justify-content: center;
     z-index: 101;
 }
-.act-pop-mask{
+.act-pop-mask {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.act-pop-box{
+.act-pop-box {
     width: 80%;
     z-index: 1;
 }
-.act-pop-top{
+.act-pop-top {
     position: relative;
 }
-.act-pop-content{
+.act-pop-content {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     background-repeat: repeat-y;
-    background-size: 100% 100%;
-    padding: .5rem 11%;
+    background-size: contain;
+    padding: 0.5rem 11%;
     max-height: 20rem;
 }
-.act-pop-bottom{
+.act-pop-bottom {
     position: relative;
 }
 /*分享提示弹窗*/
 .act-pop-friend,
-.act-pop-share{
+.act-pop-share {
     position: absolute;
     top: 5%;
     right: 0;
@@ -1584,33 +1604,33 @@ label.ui-label-checkbox.active-state .ui-item-inner:after {
 
 /***活动规则弹窗***/
 /*序列*/
-.act-pop-content.act-rule{
-    padding: .8rem;
+.act-pop-content.act-rule {
+    padding: 0.8rem;
 }
-.act-rule-ol{
-    margin-left: .8rem;
+.act-rule-ol {
+    margin-left: 0.8rem;
 }
 .act-rule-ol,
-.act-rule-ol li{
+.act-rule-ol li {
     list-style: decimal;
 }
-.act-rule-ol .act-rule-table{
-    margin-left: -.4rem;
+.act-rule-ol .act-rule-table {
+    margin-left: -0.4rem;
 }
 .act-rule-text p,
-.act-rule-ol li{
-    margin: .3rem 0;
-    font-size: .7rem;
+.act-rule-ol li {
+    margin: 0.3rem 0;
+    font-size: 0.7rem;
 }
 /*规则表格*/
-.act-rule-table{
+.act-rule-table {
     width: 100%;
 }
 .act-rule-table th,
-.act-rule-table td{
+.act-rule-table td {
     border: 1px solid #ddd;
     text-align: center;
-    padding: .1rem;
+    padding: 0.1rem;
 }
 
 /***** 横屏提示 *****/

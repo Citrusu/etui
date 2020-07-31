@@ -1,0 +1,4 @@
+---
+slidebar:auto
+---
+11

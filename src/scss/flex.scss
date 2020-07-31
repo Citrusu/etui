@@ -1,0 +1,53 @@
+/***** flex *****/
+.ui-flex {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: inherit;
+}
+
+// [class*="ui-flex-"], [class^=ui-flex-]{
+//     @extend .ui-flex;
+// }
+
+.ui-flex-center {
+    @extend .ui-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.ui-flex-between {
+    @extend .ui-flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.ui-flex-around {
+    @extend .ui-flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.ui-flex-column {
+    @extend .ui-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.ui-flex-wrap {
+    @extend .ui-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.ui-flex-1 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+/*子元素*/
+.ui-flex-lt {
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -ms-align-self: flex-start;
+}

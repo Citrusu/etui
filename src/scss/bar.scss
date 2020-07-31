@@ -1,0 +1,65 @@
+/***** bar *****/
+.ui-bar-header,
+.ui-bar-footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: .2rem .3rem;
+    background-color: #f7f7f8;
+    z-index: 10;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ui-bar-header {
+    top: 0;
+    height: 2.2rem;
+}
+.ui-bar-header ~ .ui-content{
+    top: 2.5rem;
+}
+.ui-bar-footer{
+    bottom: 0;
+    height: 2.5rem;
+}
+.ui-bar-footer ~ .ui-content{
+    bottom: 2.5rem;
+}
+.ui-bar-title > h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 70%;
+    padding: 0;
+    margin: auto;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: #3d4145;
+    text-align: center;
+    white-space: nowrap;
+}
+.ui-bar-title .ui-bar-button-left{
+    display: inline-block;
+}
+.ui-bar-button-right{
+    position: absolute;
+    right: .3rem;
+}
+.ui-bar-title .act-icon{
+    font-size: 1.2rem;
+}
+.ui-bar-search{
+
+}
+.ui-bar-button{
+
+}
+.ui-bar-button.ui-cell{
+    position: absolute;
+    padding: 0 .3rem;
+}
+.ui-bar-button > .ui-button{
+    margin: 0 .1rem;
+}

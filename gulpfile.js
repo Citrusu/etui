@@ -1,12 +1,13 @@
 // 引入 gulp及组件
-var gulp=require('gulp'),  //gulp基础库
+var gulp = require('gulp'),  //gulp基础库
     cleanCSS = require('gulp-clean-css'), //css压缩
     concat = require('gulp-concat'),   //合并文件
     rename = require('gulp-rename'),   //文件重命名
+    sass = require("gulp-sass"),
     notify = require('gulp-notify');   //提示
 
 //css
-gulp.task('mincss',function(){
+gulp.task('mincss', function () {
     return gulp.src([
         'css/src/license.css',
         'css/src/icon.css',
@@ -32,28 +33,38 @@ gulp.task('mincss',function(){
         'css/src/debug.css',
         'css/src/tip.css'
     ])
-    //设置css
+        //设置css
         .pipe(concat('actui.css'))      //合并css文件
         .pipe(rename('actui.debug.css'))//修改文件名
         .pipe(gulp.dest('css/'))        //设置输出路径
         .pipe(rename('actui.css'))      //修改文件名
         .pipe(cleanCSS())               //压缩文件
         .pipe(gulp.dest('css/'))        //设置输出路径
-        .pipe(notify({message:'css task ok'}));   //提示成功
+        .pipe(notify({ message: 'css task ok' }));   //提示成功
 });
 
-gulp.task('minanimate',function(){
+gulp.task('actui', function () {
     return gulp.src([
-        'css/actui_animate.css'
+        'src/actui.scss'
     ])
-    //设置css
-        //.pipe(concat('actui.css'))      //合并css文件
-        //.pipe(rename('actui.debug.css'))//修改文件名
-        //.pipe(gulp.dest('css/'))        //设置输出路径
-        .pipe(rename('actui_animate.min.css'))      //修改文件名
+        .pipe(sass()) //将scss编译成css
+        .pipe(rename('actui.css'))      //修改文件名
+        .pipe(gulp.dest('dist/'))        //设置输出路径
+        .pipe(rename('actui.min.css'))
         .pipe(cleanCSS())               //压缩文件
-        .pipe(gulp.dest('css/'))        //设置输出路径
-        .pipe(notify({message:'css task ok'}));   //提示成功
-});
+        .pipe(gulp.dest('dist/'))
+})
 
-gulp.task('default', ['mincss']);
+gulp.task('etui', function () {
+    return gulp.src([
+        'src/etui.scss'
+    ])
+        .pipe(sass()) //将scss编译成css
+        .pipe(rename('etui.css'))      //修改文件名
+        .pipe(gulp.dest('dist/'))        //设置输出路径
+        .pipe(rename('etui.min.css'))
+        .pipe(cleanCSS())               //压缩文件
+        .pipe(gulp.dest('dist/'))
+})
+
+gulp.task('default', ['etui', 'actui']);
