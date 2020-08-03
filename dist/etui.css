@@ -977,42 +977,6 @@ body {
   content: "\e633";
   color: #999; }
 
-/***** 定位 *****/
-.ui-abs-box,
-.ui-abs-box > a,
-.ui-abs-box > div,
-.ui-abs,
-[class*="ui-abs-"], [class^=ui-abs-] {
-  position: absolute;
-  /*border: 1px solid #f00;*/ }
-
-.ui-abs-center {
-  position: absolute;
-  /*border: 1px solid #f00;*/
-  left: 0;
-  right: 0;
-  margin: auto; }
-
-/*居中*/
-.ui-abs-right {
-  position: absolute;
-  right: 0; }
-
-/*右上*/
-.ui-abs-rt {
-  top: 0;
-  left: 0; }
-
-/*右下*/
-.ui-abs-rb {
-  bottom: 0;
-  right: 0; }
-
-/*左下*/
-.ui-abs-lb {
-  bottom: 0;
-  left: 0; }
-
 /***** 自适应头像 *****/
 .ui-avatar,
 .ui-avatar-head,
@@ -1911,40 +1875,19 @@ html.ui-with-statusbar-overlay .ui-popup.ui-tablet-fullscreen {
 .ui-font-xl {
   font-size: .9rem; }
 
-/***** 横屏提示 *****/
-.body-landscape:after {
-  content: '为了更好的体验，请把手机竖过来';
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  z-index: 5000; }
-
-.no-landscape:after {
-  display: none; }
-
 .ui-button {
   text-decoration: none;
   text-align: center;
   display: block;
   border-radius: 0.25rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
   background: none;
-  padding: 0.05rem 0.5rem;
+  padding: 0.15rem 0.5rem;
   margin: 0;
   /*height: 2rem;*/
   white-space: nowrap;
@@ -2309,3 +2252,39 @@ html.ui-with-statusbar-overlay .ui-popup.ui-tablet-fullscreen {
   align-self: flex-start;
   -webkit-align-self: flex-start;
   -ms-align-self: flex-start; }
+
+/***** 定位 *****/
+.ui-abs-box,
+.ui-abs-box > a,
+.ui-abs-box > div,
+.ui-abs,
+[class*="ui-abs-"], [class^=ui-abs-] {
+  position: absolute;
+  /*border: 1px solid #f00;*/ }
+
+.ui-abs-center {
+  position: absolute;
+  /*border: 1px solid #f00;*/
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+/*居中*/
+.ui-abs-right {
+  position: absolute;
+  right: 0; }
+
+/*右上*/
+.ui-abs-rt {
+  top: 0;
+  left: 0; }
+
+/*右下*/
+.ui-abs-rb {
+  bottom: 0;
+  right: 0; }
+
+/*左下*/
+.ui-abs-lb {
+  bottom: 0;
+  left: 0; }
