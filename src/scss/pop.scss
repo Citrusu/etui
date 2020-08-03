@@ -1,6 +1,6 @@
 /*****弹窗*****/
 .act-pop {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -15,19 +15,20 @@
     align-items: center;
     justify-content: center;
     -webkit-justify-content: center;
-    z-index: 101;
+    z-index: 10100;
 }
 .act-pop-mask {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .act-pop-box {
     width: 80%;
     z-index: 1;
+    position: relative;
 }
 .act-pop-top {
     position: relative;
@@ -38,7 +39,7 @@
     -webkit-overflow-scrolling: touch;
     background-repeat: repeat-y;
     background-size: contain;
-    padding: 0.5rem 11%;
+    padding: 1rem 11%;
     max-height: 20rem;
 }
 .act-pop-bottom {
