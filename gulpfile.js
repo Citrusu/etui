@@ -76,4 +76,4 @@ gulp.task('mapp', function () {
         .pipe(gulp.dest('dist/'))        //设置输出路径
 })
 
-gulp.task('default', ['etui', 'actui', 'mapp']);
+gulp.task('default', gulp.series(gulp.parallel('etui', 'actui', 'mapp')));

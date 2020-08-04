@@ -14,7 +14,6 @@ https://github.com/Citrusu/etui
     ```bash
     npm i
     ```
-> 如果编译错误，请尝试切换到 node 8.x 版本
  
 ## 使用
 
