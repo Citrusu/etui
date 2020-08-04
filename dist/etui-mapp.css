@@ -4,289 +4,10 @@
 |*| Version: v1.0.0
 |*| Licensed under MIT
 \*/
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden],
-template {
-  display: none; }
-
-a {
-  background-color: transparent; }
-
-a:active,
-a:hover {
-  outline: 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b,
-strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
-
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-pre {
-  overflow: auto; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-button {
-  overflow: visible; }
-
-button,
-select {
-  text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-input {
-  line-height: normal; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto; }
-
-optgroup {
-  font-weight: bold; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none; }
-
-body {
-  /*position: absolute;*/
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #3d4145;
-  background: #f3f3f3;
-  /*overflow: hidden;*/ }
-
-a,
-input,
-textarea,
-select,
-button {
-  outline: 0; }
-
-p {
-  margin: 1em 0; }
-
-a {
-  color: #0894ec;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
-a:active {
-  color: #0a8ddf; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
 /**** 基础 *****/
-html {
-  font-size: 20px; }
-
-/* 4s */
-@media only screen and (min-width: 320px) {
-  html {
-    font-size: 17.06666667px !important; } }
-
-/* 5/5s/6/6s/7/8 */
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 20px !important; } }
-
-@media only screen and (min-width: 400px) {
-  html {
-    font-size: 21.33333333px !important; } }
-
-/* iphone plus */
-@media only screen and (min-width: 414px) {
-  html {
-    font-size: 22.08px !important; } }
-
-@media only screen and (min-width: 480px) {
-  html {
-    font-size: 25.6px !important; } }
-
-@media only screen and (min-width: 640px) {
-  html {
-    font-size: 34.13333333px !important; } }
-
-@media only screen and (min-width: 720px) {
-  html {
-    font-size: 38.4px !important; } }
-
-body {
-  margin: 0 auto;
-  max-width: 720px;
-  min-width: 320px;
-  font-size: 0.7rem; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  color: #3d4145;
-  background: #f1f2f4; }
-
-.ui-content {
-  -webkit-overflow-scrolling: touch; }
-
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-touch-callout: none; }
+page {
+  font-size: 24rpx;
+  color: #333; }
 
 /***** flex *****/
 .ui-flex, .ui-flex-center, .ui-flex-between, .ui-flex-around, .ui-flex-wrap, .ui-flex-column {
@@ -490,6 +211,94 @@ body {
 
 .ui-font-xl {
   font-size: .9rem; }
+
+/*****弹窗*****/
+.act-pop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  z-index: 10100; }
+
+.act-pop-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.act-pop-box {
+  width: 80%;
+  z-index: 1;
+  position: relative; }
+
+.act-pop-top {
+  position: relative; }
+
+.act-pop-content {
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-repeat: repeat-y;
+  background-size: contain;
+  padding: 1rem 11%;
+  max-height: 20rem; }
+
+.act-pop-bottom {
+  position: relative; }
+
+/*分享提示弹窗*/
+.act-pop-friend,
+.act-pop-share {
+  position: absolute;
+  top: 5%;
+  right: 0; }
+
+.act-pop-close {
+  position: absolute;
+  /*border: 1px solid #f00;*/ }
+
+/***活动规则弹窗***/
+/*序列*/
+.act-pop-content.act-rule {
+  padding: 0.8rem; }
+
+.act-rule-ol {
+  margin-left: 0.8rem; }
+
+.act-rule-ol,
+.act-rule-ol li {
+  list-style: decimal; }
+
+.act-rule-ol .act-rule-table {
+  margin-left: -0.4rem; }
+
+.act-rule-text p,
+.act-rule-ol li {
+  margin: 0.3rem 0;
+  font-size: 0.7rem; }
+
+/*规则表格*/
+.act-rule-table {
+  width: 100%; }
+
+.act-rule-table th,
+.act-rule-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0.1rem; }
 
 /***** 主题 *****/
 .ui-color-default {

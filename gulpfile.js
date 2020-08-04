@@ -67,4 +67,13 @@ gulp.task('etui', function () {
         .pipe(gulp.dest('dist/'))
 })
 
-gulp.task('default', ['etui', 'actui']);
+gulp.task('mapp', function () {
+    return gulp.src([
+        'src/etui-mapp.scss'
+    ])
+        .pipe(sass()) //将scss编译成css
+        .pipe(rename('etui-mapp.css'))      //修改文件名
+        .pipe(gulp.dest('dist/'))        //设置输出路径
+})
+
+gulp.task('default', ['etui', 'actui', 'mapp']);
