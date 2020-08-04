@@ -1,3 +1,4 @@
+
 # Actui.css
 
 ## icon字体
@@ -60,7 +61,7 @@ html {
 
 ## 布局
 
-##### 列表
+## 列表
 
 ```html
 <div class="ui-cells">
@@ -71,7 +72,7 @@ html {
 
 示例 [链接](http://alidemo.yidake.com/Actui/cell)
 
-##### 换行
+## 换行
 
 ```html
 <!-- 在含有ui-cell样式的元素中，子元素默认不换行，添加ui-cell-wrap后可在宽度不够时自动换行 -->
@@ -83,7 +84,7 @@ html {
 
 示例 [链接](http://alidemo.yidake.com/Actui/cell-1)
 
-##### 排列
+## 排列
 
 ```html
 <!-- 在含有ui-cell样式的元素中，子元素默认排序为上下居中，ui-cell-lt样式可将单个子元素的排列方式更改为排列在左上角位置 -->
@@ -103,7 +104,7 @@ html {
 
 示例 [链接](http://alidemo.yidake.com/Actui/cell-2)
 
-##### 自适应宽度
+## 自适应宽度
 
 ```html
 <!-- 给含有ui-cell样式的子元素添加 ui-cell-1 || ui-cell-primary 样式后，会使这个子元素的宽度自动占据父元素剩下的宽度，当存在多个ui-cell-1时，自动平分剩下的宽度 -->
