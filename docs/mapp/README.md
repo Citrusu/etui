@@ -1,6 +1,10 @@
 # 小程序专用
 
-可以用到的模块
+## 引用
+
+引用文件 `/dist/etui-mapp.css`
+
+## 可以用到的模块
 
 - flex
 - content
