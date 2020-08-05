@@ -10,8 +10,8 @@ module.exports = {
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
                     // ['/etui/', '介绍'],
-                    ['/etui/start', '开始使用'],
-                    ['/etui/about', '准备'],
+                    ['/guide/start', '开始使用'],
+                    ['/guide/about', '准备'],
                 ]
             },
             {
@@ -19,20 +19,20 @@ module.exports = {
                 path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
-                    ['/etui/base', 'Base 基础'],
-                    ['/etui/bar', 'Bar'],
-                    ['/etui/tab', 'Tab 切换'],
-                    ['/etui/cell', 'Cell 布局'],
-                    ['/etui/flex', 'Flex 布局'],
-                    ['/etui/position', 'Position 定位'],
-                    ['/etui/avatar', 'Avatar头像'],
-                    ['/etui/form', 'Form 表单'],
-                    ['/etui/modals', 'Modals 交互提示'],
-                    ['/etui/pop', 'Pop 弹窗'],
-                    ['/etui/text', 'Text 文字'],
-                    ['/etui/button', 'Button 按钮'],
-                    ['/etui/animate', 'Animation 动画'],
-                    ['/etui/theme', 'Theme 主题'],
+                    ['/modules/base', 'Base 基础'],
+                    ['/modules/bar', 'Bar'],
+                    ['/modules/tab', 'Tab 切换'],
+                    ['/modules/cell', 'Cell 布局'],
+                    ['/modules/flex', 'Flex 布局'],
+                    ['/modules/position', 'Position 定位'],
+                    ['/modules/avatar', 'Avatar头像'],
+                    ['/modules/form', 'Form 表单'],
+                    ['/modules/modals', 'Modals 交互提示'],
+                    ['/modules/pop', 'Pop 弹窗'],
+                    ['/modules/text', 'Text 文字'],
+                    ['/modules/button', 'Button 按钮'],
+                    ['/modules/animate', 'Animation 动画'],
+                    ['/modules/theme', 'Theme 主题'],
                 ]
             },
             {
@@ -49,6 +49,14 @@ module.exports = {
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
                     ['/mapp/', '介绍']
+                ]
+            },
+            {
+                title: '常用插件',   // 必要的
+                path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                collapsable: false, // 可选的, 默认值是 true,
+                children: [
+                    ['/plugins/', '介绍']
                 ]
             },
 
