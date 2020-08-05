@@ -23,26 +23,20 @@ html {
 
 ```html
 <body>
-  <!-- 标题栏 -->
-  <div class="ui-bar-header ui-bar-title">
-      <h1>我是标题</h1>
-  </div>
+    <div class="ui-page-group">
+        <div class="ui-page ui-page-current ">
+            <!-- 页头，底部导航位置 -->
+            <include file="pub/_tabbar" />
+            <!-- 页面内容区开始-->
+            <div class="ui-content">
+                <!-- 页面主体内容 -->
+            </div>
 
-  <!-- 底部栏 -->
-  <div class="ui-bar-footer">
-      
-  </div>
-  
-  <!-- 内容 -->
-  <div class="ui-content">
-
-  </div>
-
-  <!-- 弹窗 -->
-  <div class="panel-overlay">
-
-  </div>
+            <!-- 弹窗 -->
+            <div class="panel-overlay">
+                
+            </div>
+        </div>
+    </div>
 </body>
 ```
-
-示例 [链接](http://alidemo.yidake.com/Actui/index)
