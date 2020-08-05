@@ -1,7 +1,7 @@
 module.exports = {
     title: 'ETUI',
     description: 'ETUI Document',
-    // base: '/etui/',
+    base: '/etui/',
     themeConfig: {
         sidebar: [
             {
