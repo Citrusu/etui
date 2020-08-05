@@ -1,6 +1,7 @@
 module.exports = {
     title: 'ETUI',
     description: 'ETUI Document',
+    base: '/etui/',
     themeConfig: {
         sidebar: [
             {
@@ -54,5 +55,5 @@ module.exports = {
 
         ],
 
-    }
+    },
 }
