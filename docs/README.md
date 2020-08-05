@@ -14,4 +14,4 @@
 
 ## 布署
 
-    ./deploy.sh
+    . deploy.sh
