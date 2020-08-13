@@ -12,6 +12,7 @@
     display: -ms-flexbox;
     display: flex;
     color: inherit;
+    @include align-center;
 }
 
 .ui-flex-center {

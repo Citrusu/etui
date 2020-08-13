@@ -295,7 +295,11 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit; }
+  color: inherit;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .ui-flex-center {
   -webkit-box-align: center;
